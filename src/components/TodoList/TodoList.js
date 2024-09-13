@@ -11,11 +11,9 @@ export const TodoList = () => {
 
   const upTitel = (e) => {
     setTitel(e.target.value);
-    console.log(titel);
   };
   const upText = (e) => {
     setText(e.target.value);
-    console.log(text);
   };
 
   const addTask = (e) => {
@@ -37,12 +35,14 @@ export const TodoList = () => {
         label="Тема"
         variant="outlined"
         onChange={upTitel}
+        value={titel}
       />
       <TextField
         id="outlined-basic"
         label="Задача"
         variant="outlined"
         onChange={upText}
+        value={text}
       />
       <br></br>
       <Button variant="contained" onClick={addTask}>
